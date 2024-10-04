@@ -1,0 +1,7 @@
+timestamp,log_type,num_sats,deployed_sats
+2024-07-08 14:58:20.570,deploy_start,1,1
+2024-07-08 14:58:35.426,deploy_complete,1,1
+2024-07-08 14:59:51.648,deploy_start,1,2
+2024-07-08 15:00:05.810,deploy_complete,1,2
+2024-07-08 15:00:05.811,undeploy_start,1,2
+2024-07-08 15:00:06.915,undeploy_complete,1,1

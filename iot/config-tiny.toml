@@ -1,0 +1,82 @@
+bbox = [2, 174, 39, -124]
+
+resolution = 1
+duration = 900
+# duration = 120
+
+# (114deg) / 360deg * 86400 = 45120
+offset = 12200
+
+[network_params]
+bandwidth_kbits = 10_000_000
+min_elevation = 25
+ground_station_connection_type = "all"
+
+[compute_params]
+vcpu_count = 2
+mem_size_mib = 2048
+disk_size_mib = 2048
+kernel = "vmlinux-5.15-containerd.bin"
+rootfs = "sensor.img"
+
+[[shell]]
+inclination = 53.0
+planes = 36
+sats = 22
+altitude_km = 550
+arc_of_ascending_nodes = 180.0
+eccentricity = 0.0
+
+[shell.compute_params]
+rootfs = "satellite.img"
+
+# this is the NOAA Dart processing location
+[[ground_station]]
+name = "nase"
+lat = 21.366315122964277
+long = -157.96262184972477
+
+[ground_station.compute_params]
+rootfs = "nase.img"
+vcpu_count = 8
+mem_size_mib = 8096
+
+[[ground_station]]
+name = "orchestrator"
+lat = 21.366315122964277
+long = -157.96262184972477
+
+[ground_station.compute_params]
+rootfs = "orchestrator.img"
+vcpu_count = 8
+mem_size_mib = 8096
+
+[[ground_station]]
+name = "sensor111"
+lat = 24.361
+long = -162.075
+
+[[ground_station]]
+name = "sensor134"
+lat = 23.729
+long = -144.668
+
+[[ground_station]]
+name = "sensor44"
+lat = 28.3
+long = -143.8
+
+[[ground_station]]
+name = "sensor123"
+lat = 21.477
+long = -157.756
+
+[[ground_station]]
+name = "sensor158"
+lat = 26.0
+long = -156.0
+
+[[ground_station]]
+name = "sensor118"
+lat = 21.019
+long = -156.422

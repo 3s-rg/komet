@@ -1,0 +1,456 @@
+bbox = [35.0, -140.0, 60.0, -100.0]
+
+resolution = 1
+duration = 1500
+# duration = 120
+
+# (114deg) / 360deg * 86400 = 45120
+offset = 45120
+
+[network_params]
+bandwidth_kbits = 10_000_000
+min_elevation = 25
+ground_station_connection_type = "all"
+
+[compute_params]
+vcpu_count = 8
+mem_size_mib = 8192
+disk_size_mib = 16_384
+kernel = "vmlinux-5.15-containerd.bin"
+rootfs = "satellite.img"
+
+[[shell]]
+inclination = 53.0
+planes = 72
+sats = 22
+altitude_km = 550
+arc_of_ascending_nodes = 360.0
+eccentricity = 0.0
+
+[[ground_station]]
+name = "nase"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "nase.img"
+
+[[ground_station]]
+name = "origin"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "origin.img"
+vcpu_count = 8
+mem_size_mib = 8192
+
+[[ground_station]]
+name = "orchestrator"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "orchestrator.img"
+vcpu_count = 8
+mem_size_mib = 8192
+
+[[ground_station]]
+name = "client-shaniko"
+lat = 45.00352
+long = -120.75296
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-baker"
+lat = 44.77419
+long = -117.83100
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-prescott"
+lat = 46.29903
+long = -118.31472
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-twinfalls"
+lat = 42.55513
+long = -114.46855
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-greatfalls"
+lat = 47.50534
+long = -111.30604
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-pocatello"
+lat = 42.87276
+long = -112.45019
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-bozeman"
+lat = 45.67940
+long = -111.03210
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-everett"
+lat = 47.97816
+long = -122.20724
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-medford"
+lat = 42.32309
+long = -122.87654
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-spokane"
+lat = 47.66014
+long = -117.42405
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-kimberly"
+lat = 44.75931
+long = -119.64444
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-yakima"
+lat = 46.60488
+long = -120.50568
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-centralia"
+lat = 46.71907
+long = -122.95442
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-cascade"
+lat = 44.51568
+long = -116.04160
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-salmon"
+lat = 45.17685
+long = -113.89704
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-burns"
+lat = 43.58385
+long = -119.05442
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-bend"
+lat = 44.05683
+long = -121.31466
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-kalispell"
+lat = 48.19685
+long = -114.31150
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-charlo"
+lat = 47.43859
+long = -114.17233
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-pullman"
+lat = 46.72888
+long = -117.17951
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-seneca"
+lat = 44.13429
+long = -118.97067
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-brownsville"
+lat = 44.39331
+long = -122.98443
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-yachats"
+lat = 44.31305
+long = -124.10492
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-tillamook"
+lat = 45.45669
+long = -123.84208
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-maupin"
+lat = 45.17556
+long = -121.08012
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-boardman"
+lat = 45.83277
+long = -119.70313
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-kennewick"
+lat = 46.20266
+long = -119.12066
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-aberdeen"
+lat = 46.97580
+long = -123.81736
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-pollock"
+lat = 45.31239
+long = -116.35902
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-packwood"
+lat = 46.60222
+long = -121.67502
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-clarkia"
+lat = 47.01074
+long = -116.25293
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-malden"
+lat = 47.22973
+long = -117.47282
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-ritzville"
+lat = 47.12848
+long = -118.37885
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-odessa"
+lat = 47.33303
+long = -118.68420
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-quincy"
+lat = 47.23608
+long = -119.85561
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-roslyn"
+lat = 47.22202
+long = -120.99247
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-snoqualmie"
+lat = 47.40812
+long = -121.41159
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-baringoo"
+lat = 47.77277
+long = -121.48603
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-kalaloch"
+lat = 47.60452
+long = -124.37242
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-corvallis"
+lat = 44.56408
+long = -123.26418
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-molalla"
+lat = 45.14818
+long = -122.57694
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-campsherman"
+lat = 44.4465
+long = -121.65456
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-prineville"
+lat = 44.30293
+long = -120.84382
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-lagrande"
+lat = 45.32948
+long = -118.09588
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-mccall"
+lat = 44.90915
+long = -116.09944
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-cobalt"
+lat = 45.09298
+long = -114.23174
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-may"
+lat = 44.60437
+long = -113.91200
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-darby"
+lat = 46.02082
+long = -114.17795
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-bannack"
+lat = 45.16103
+long = -112.99559
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+[[ground_station]]
+name = "client-wisdom"
+lat = 45.61774
+long = -113.44905
+
+[ground_station.compute_params]
+rootfs = "client.img"

@@ -1,0 +1,56 @@
+bbox = [29.993002, -172.265625, 62.512318, -87.363281]
+resolution = 1
+duration = 1200
+# duration = 120
+
+offset = 40_500
+
+[network_params]
+bandwidth_kbits = 10_000_000
+min_elevation = 25
+ground_station_connection_type = "all"
+
+[compute_params]
+vcpu_count = 2
+mem_size_mib = 2048
+disk_size_mib = 2048
+kernel = "vmlinux-5.15-containerd.bin"
+rootfs = "satellite.img"
+
+[[shell]]
+inclination = 53.0
+planes = 36
+sats = 22
+altitude_km = 550
+arc_of_ascending_nodes = 180.0
+eccentricity = 0.0
+
+[[ground_station]]
+name = "nase"
+lat = 47.67859
+long = -122.13031
+
+[ground_station.compute_params]
+rootfs = "nase.img"
+vcpu_count = 8
+mem_size_mib = 8096
+
+[[ground_station]]
+name = "orchestrator"
+lat = 47.67859
+long = -122.13031
+
+[ground_station.compute_params]
+rootfs = "orchestrator.img"
+vcpu_count = 8
+mem_size_mib = 8096
+
+[[ground_station]]
+name = "redmond"
+lat = 47.67859
+long = -122.13031
+
+[ground_station.compute_params]
+rootfs = "client.img"
+vcpu_count = 8
+mem_size_mib = 8096

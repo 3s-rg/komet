@@ -1,0 +1,216 @@
+bbox = [35.0, -140.0, 60.0, -100.0]
+
+resolution = 1
+duration = 1500
+# duration = 120
+
+# (114deg) / 360deg * 86400 = 45120
+offset = 39000
+
+[network_params]
+bandwidth_kbits = 10_000_000
+min_elevation = 20
+ground_station_connection_type = "all"
+
+[compute_params]
+vcpu_count = 8
+mem_size_mib = 8192
+disk_size_mib = 16_384
+kernel = "vmlinux-5.15-containerd.bin"
+rootfs = "satellite.img"
+
+[[shell]]
+inclination = 53.0
+planes = 1
+sats = 22
+altitude_km = 550
+arc_of_ascending_nodes = 180.0
+eccentricity = 0.0
+
+[[ground_station]]
+name = "nase"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "nase.img"
+
+[[ground_station]]
+name = "origin"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "origin.img"
+vcpu_count = 8
+mem_size_mib = 8192
+
+[[ground_station]]
+name = "orchestrator"
+lat = 45.48273
+long = -118.83353
+
+[ground_station.compute_params]
+rootfs = "orchestrator.img"
+vcpu_count = 8
+mem_size_mib = 8192
+
+[[ground_station]]
+name = "client-shaniko"
+lat = 45.00352
+long = -120.75296
+
+[ground_station.compute_params]
+rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko2"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko20"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko19"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko18"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko17"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko16"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko15"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko14"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko13"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko12"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko11"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko10"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko9"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko8"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko7"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko6"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko5"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko4"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"
+
+# [[ground_station]]
+# name = "client-shaniko3"
+# lat = 45.00352
+# long = -120.75296
+
+# [ground_station.compute_params]
+# rootfs = "client.img"

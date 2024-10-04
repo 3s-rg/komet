@@ -1,0 +1,211 @@
+bbox = [20.0, 140.0, 78.0, -100.0]
+
+resolution = 1
+duration = 3600
+# duration = 120
+
+# (114deg) / 360deg * 86400 = 45120
+offset = 12200
+
+[network_params]
+bandwidth_kbits = 10_000_000
+min_elevation = 25
+ground_station_connection_type = "all"
+
+[compute_params]
+vcpu_count = 8
+mem_size_mib = 8096
+disk_size_mib = 10_000
+kernel = "vmlinux-5.15-containerd.bin"
+rootfs = "sensor.img"
+
+[[shell]]
+inclination = 53.0
+planes = 72
+sats = 22
+altitude_km = 550
+arc_of_ascending_nodes = 360.0
+eccentricity = 0.0
+
+[shell.compute_params]
+rootfs = "satellite.img"
+
+# 21413|N|2.6-meter discus buoy|2.6D75|SOUTHEAST TOKYO - 700NM ESE of Tokyo, JP|DART 4G payload|30.511 N 152.107 E (30&#176;30'41" N 152&#176;6'25" E)|?| |
+[[ground_station]]
+name = "sensor21413"
+lat = 30.511
+long = 152.107
+
+# 21414|N|2.6-meter discus buoy|2.6D70| AMCHITKA - 170 NM South of Amchitka, AK|DART II payload|48.977 N 178.199 E (48&#176;58'38" N 178&#176;11'58" E)|?| |
+[[ground_station]]
+name = "sensor21414"
+lat = 48.977
+long = 178.199
+
+# 21415|N|2.6-meter discus buoy|2.6D74|ATTU - 175 NM South of Attu, AK|DART II payload|50.111 N 171.874 E (50&#176;6'40" N 171&#176;52'25" E)|?| |
+[[ground_station]]
+name = "sensor21415"
+lat = 50.111
+long = 171.874
+
+# 21416|N|2.6-meter discus buoy|2.6D27|KAMCHATKA PENINSULA - 240NM SE of Kamchatka Peninsula, RU |DART II payload|48.120 N 163.430 E (48&#176;7'12" N 163&#176;25'48" E)|?| |
+[[ground_station]]
+name = "sensor21416"
+lat = 48.12
+long = 163.43
+
+# 21417|N|2.6-meter discus buoy|26D38|290NM SE of the Kuril Islands|DART II payload|43.192 N 157.142 E (43&#176;11'30" N 157&#176;8'30" E)|?| |<p>Station 21417 has been disestablished 7/05/2009, replaced by station 21419 92NM to the Northeast.</p>
+[[ground_station]]
+name = "sensor21417"
+lat = 43.192
+long = 157.142
+
+# 21418|N|2.6-meter discus buoy|2.6D21|NORTHEAST TOKYO - 450 NM NE of Tokyo, JP|DART II payload|38.764 N 148.808 E (38&#176;45'50" N 148&#176;48'27" E)|?| |
+[[ground_station]]
+name = "sensor21418"
+lat = 38.764
+long = 148.808
+
+# 21419|N|2.6-meter discus buoy|2.6D94|KURIL ISLANDS - 209NM SE of Kuril Is. |DART II payload|44.401 N 155.653 E (44&#176;24'4" N 155&#176;39'12" E)|P| |
+[[ground_station]]
+name = "sensor21419"
+lat = 44.401
+long = 155.653
+
+# 21d13|N|2.6-meter discus buoy|2.6D84|SOUTHEAST TOKYO - 700NM ESE of Tokyo, JP|DART II payload|30.514 N 152.123 E (30&#176;30'52" N 152&#176;7'21" E)|?| |As of 2200z, 6/28/24, the drifting buoy at station 21d13 has been recovered.
+[[ground_station]]
+name = "sensor21d13"
+lat = 30.514
+long = 152.123
+
+# 46401|N|2.6-meter discus buoy|| SOUTHEAST ADAK - 377NM SE of Adak, AK|DART I payload|46.638 N 170.790 W (46&#176;38'15" N 170&#176;47'24" W)|?| |DART Station 46401 was disestablished on 23 July 2006.
+[[ground_station]]
+name = "sensor46401"
+lat = 46.638
+long = -170.79
+
+# 46402|N|2.6-meter discus buoy|2.6D48| South Dutch Harbor - 220 NM SSE of Dutch Harbor, AK|DART II payload|50.913 N 164.147 W (50&#176;54'48" N 164&#176;8'48" W)|?| |
+[[ground_station]]
+name = "sensor46402"
+lat = 50.913
+long = -164.147
+
+# 46403|N|2.6-meter discus buoy|2.6D10|SOUTHEAST SHUMAGIN ISLAND - 186 NM SE of Shumagin Is, AK|DART 4G payload|52.659 N 156.820 W (52&#176;39'31" N 156&#176;49'11" W)|?| |
+[[ground_station]]
+name = "sensor46403"
+lat = 52.659
+long = -156.82
+
+# 46404|N|2.6-meter discus buoy|2.6D08|WEST ASTORIA - 230 NM West of Astoria, OR|DART II payload|45.870 N 128.756 W (45&#176;52'11" N 128&#176;45'20" W)|?| |
+[[ground_station]]
+name = "sensor46404"
+lat = 45.87
+long = -128.756
+
+# 46405|N|2.6-meter discus buoy||325 NM West-Southwest of Newport, OR|DART I payload|42.903 N 130.909 W (42&#176;54'11" N 130&#176;54'32" W)|?| |46405 has been disestablished and a new station has been established at <a title="46407" href="http://www.ndbc.noaa.gov/station_page.php?station=46407">46407</a><br />
+[[ground_station]]
+name = "sensor46405"
+lat = 42.903
+long = -130.909
+
+# 46407|N|2.6-meter discus buoy|2.6D13|NEWPORT - 210NM West of Coos Bay, OR|DART II payload|42.715 N 128.825 W (42&#176;42'54" N 128&#176;49'30" W)|?| |
+[[ground_station]]
+name = "sensor46407"
+lat = 42.715
+long = -128.825
+
+# 46408|N|2.6-meter discus buoy|2.6D85| NIKOLSKI - 212 NM South of Umnak Is, AK|DART II payload|49.652 N 169.895 W (49&#176;39'6" N 169&#176;53'42" W)|?| |
+[[ground_station]]
+name = "sensor46408"
+lat = 49.652
+long = -169.895
+
+# 46409|N|2.6-meter discus buoy|2.6D57|SOUTHEAST KODIAK - 210 NM SE of Kodiak, AK|DART II payload|55.331 N 148.567 W (55&#176;19'50" N 148&#176;34'2" W)|?| |
+[[ground_station]]
+name = "sensor46409"
+lat = 55.331
+long = -148.567
+
+# 46410|N|2.6-meter discus buoy|2.6D32|SOUTH CORDOVA - 188 NM SSE of Cordova, AK|DART 4G payload|57.641 N 143.771 W (57&#176;38'27" N 143&#176;46'14" W)|?|FZAK67.PAJK FZAK61.PAJK|
+[[ground_station]]
+name = "sensor46410"
+lat = 57.641
+long = -143.771
+
+# 46411|N|2.6-meter discus buoy|2.6D96|Mendocino - 150 NM West of  Mendocino Bay, CA|DART II payload|39.353 N 127.052 W (39&#176;21'12" N 127&#176;3'7" W)|?| |
+[[ground_station]]
+name = "sensor46411"
+lat = 39.353
+long = -127.052
+
+# 46412|N|2.6-meter discus buoy|2.6D70|San Diego - 175 NM West of San Diego, CA|DART II payload|32.400 N 120.582 W (32&#176;24'0" N 120&#176;34'54" W)|?| |
+[[ground_station]]
+name = "sensor46412"
+lat = 32.4
+long = -120.582
+
+# 46413|N|2.6-meter discus buoy|2.6D71|SOUTH-SOUTHEAST ADAK - 243 NM SSE of Adak Island, AK|DART II payload|48.045 N 173.897 W (48&#176;2'42" N 173&#176;53'49" W)|?| |
+[[ground_station]]
+name = "sensor46413"
+lat = 48.045
+long = -173.897
+
+# 46414|N|2.6 meter DART buoy|2.6D11|SOUTHEAST CHIRIKOF - 165 NM SE of Chirikof Island, AK|DART 4G payload|53.764 N 152.416 W (53&#176;45'50" N 152&#176;24'56" W)|A| |
+[[ground_station]]
+name = "sensor46414"
+lat = 53.764
+long = -152.416
+
+# 46415|N|2.6-meter discus buoy|2.6D49|SOUTHWEST JUNEAU - 370 NM SW of Juneau, AK|DART II payload|53.035 N 139.884 W (53&#176;2'6" N 139&#176;53'4" W)|?| |
+[[ground_station]]
+name = "sensor46415"
+lat = 53.035
+long = -139.884
+
+# 46416|N|2.6 meter DART buoy|2.6D46|WEST VANCOUVER - 442NM West of Vancouver, BC, Canada|DART II payload|49.892 N 134.427 W (49&#176;53'32" N 134&#176;25'38" W)|?| |
+[[ground_station]]
+name = "sensor46416"
+lat = 49.892
+long = -134.427
+
+# 46419|N|2.6 meter DART buoy|2.6D54|NORTHWEST SEATTLE - 300 NM WNW of Seattle, WA|DART II payload|48.815 N 129.623 W (48&#176;48'54" N 129&#176;37'23" W)|?| |
+[[ground_station]]
+name = "sensor46419"
+lat = 48.815
+long = -129.623
+
+# 46451|PD|Buoy||PMEL 4G Test 1 - 83NM W of Newport, OR|DART 4G payload|44.815 N 125.699 W (44&#176;48'54" N 125&#176;41'58" W)|| |
+[[ground_station]]
+name = "sensor46451"
+lat = 44.815
+long = -125.699
+
+# 46452|PD|Buoy||PMEL 4G Test 2 - 74NM West of Newport, OR|DART 4G payload|44.807 N 125.759 W (44&#176;48'26" N 125&#176;45'32" W)|| |
+[[ground_station]]
+name = "sensor46452"
+lat = 44.807
+long = -125.759
+
+# 46490|N|Moored Buoy|2.3D02|NOOSS Optimization Buoy  |DART II payload|32.455 N 120.557 W (32&#176;27'19" N 120&#176;33'25" W)|P| |
+[[ground_station]]
+name = "sensor46490"
+lat = 32.455
+long = -120.557
+
+# 46d02|N|2.6-meter discus buoy|2.6D47|Adrift buoy from 46402|DART II payload|50.983 N 163.943 W (50&#176;58'57" N 163&#176;56'35" W)|?| |As of 0800z, 2/6/24, the buoy from station 46402 has gone adrift. To view the latest position of the buoy, click <a href="http://www.ndbc.noaa.gov/nws_special/46d02.txt" target="_blank">here.</a>
+[[ground_station]]
+name = "sensor46d02"
+lat = 50.983
+long = -163.943
+
+# 46d04|N|2.6 meter DART buoy|2.6D48|Adrift Buoy from 46404|DART II payload|45.848 N 128.775 W (45&#176;50'54" N 128&#176;46'30" W)|P| |Buoy recovered 5/6/22.
+[[ground_station]]
+name = "sensor46d04"
+lat = 45.848
+long = -128.775
+
+# 46d16|N|2.6 meter DART buoy||Adrift buoy from 46416|DART II payload|49.901 N 134.395 W (49&#176;54'5" N 134&#176;23'42" W)|P| |Buoy recovered 9/08/23.
+[[ground_station]]
+name = "sensor46d16"
+lat = 49.901
+long = -134.395

@@ -1,0 +1,2 @@
+timestamp,client,key,time,cache_hit,len,host,time_ms,sat,distance
+2024-07-08 12:34:03.783450,shaniko,/wikipedia/commons/9/90/Medal10Astana.png0_199,0.082509,False,23,51.1.celestial:8000/cdn,82.509,1-51,3917.0
